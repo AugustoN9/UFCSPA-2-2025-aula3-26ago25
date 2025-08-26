@@ -1,0 +1,92 @@
+html,
+body {
+    background-color: black;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container principal com efeito de perspectiva */
+.container-fluid {
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: auto;
+    perspective: 3px;
+}
+
+/* Seções principais */
+section {
+    background-size: cover;
+    background-color: var(--bg, --color-black);
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Imagens com efeito parallax */
+.image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateZ(-1px) scale(1.5);
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+/* Texto entre imagens */
+.text {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    
+}
+
+/* Títulos com efeito */
+.heading {
+    z-index: -1;
+    transform: translateY(-30vh) translateZ(1px) scale(1.5);
+    padding: 2rem 0;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 100px;
+}
+
+footer h3 {
+    font-weight: normal;
+    color: #00bfff;
+    /* Azul para destaque */
+}
+
+/* IDs para imagens de fundo */
+#img1 {
+    background-image: url("../image/img1.jpg");
+}
+
+#img2 {
+    background-image: url("../image/img2.jpg");
+}
+
+#img3 {
+    background-image: url("../image/img3.jpg");
+}
+
+#img4 {
+    background-image: url("../image/img4.jpg");
+}
+
+/* Re*
