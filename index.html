@@ -18,12 +18,14 @@
         <div class="container-fluid p-0">
             <section class="image" id="img1"></section>
             <section class="heading text-center py-5">
-                <h1 class="display-4">So green!</h1>
+                <h1 class="display-4">Biotecnologia!</h1>
             </section>
             <section class="text d-flex align-items-center justify-content-center text-center py-5"
                 style="--bg: #c8c8bc">
                 <div class="container">
-                    <h1 class="h2">Armenian highlands</h1>
+                    <h1 class="h2">Biotecnologia é a aplicação de princípios e técnicas científicas para manipular e
+                        utilizar organismos vivos ou suas partes com o objetivo de resolver problemas, criar produtos ou
+                        processos inovadores nas áreas de saúde, agricultura, indústria e meio ambiente.</h1>
                 </div>
             </section>
             <section class="image" id="img2"></section>
@@ -36,8 +38,95 @@
                     <h1 class="h2">Armenian highlands</h1>
                 </div>
             </section>
-            
-            <!-- Continue as demais seções -->
+            <section class="image" id="img3"></section>
+            <section class="heading text-center py-5">
+                <h1 class="display-4">Hot! hot! hot!</h1>
+            </section>
+            <section class="text d-flex align-items-center justify-content-center text-center py-5"
+                style="--bg: #c8c8bc">
+                <div class="container">
+                    <h1 class="h2">Armenian highlands</h1>
+                </div>
+                <section class="heading text-center py-5">
+
+                </section>
+            </section>
+
+            <!-- Seção do Formulário -->
+            <section id="formulario" class=" text d-flex align-items-center justify-content-center text-center py-5 bg-black"
+                style="--bg: #e6e6e6">
+                <div class="container">
+                    <h2 class="mb-4">Formulário de Cadastro</h2>
+                    <form class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome" name="nome" required>
+                            <div class="invalid-feedback">Por favor, insira seu nome.</div>
+                        </div>
+
+
+                        <div class="mb-3">
+                            <label for="idade" class="form-label">Idade</label>
+                            <input type="number" class="form-control" id="idade" name="idade" min="0" required>
+                            <div class="invalid-feedback">Por favor, insira uma idade válida.</div>
+                        </div>
+
+
+                        <div class="mb-3">
+                            <label for="cpf" class="form-label">CPF</label>
+                            <input type="text" class="form-control" id="cpf" name="cpf" maxlength="14"
+                                placeholder="000.000.000-00" required>
+                            <div class="invalid-feedback">Por favor, insira um CPF válido.</div>
+                        </div>
+
+
+                        <div class="mb-3">
+                            <label for="dataNascimento" class="form-label">Data de Nascimento</label>
+                            <input type="date" class="form-control" id="dataNascimento" name="dataNascimento" required>
+                            <div class="invalid-feedback">Por favor, insira sua data de nascimento.</div>
+                        </div>
+
+
+                        <div class="mb-3">
+                            <label class="form-label">Sexo</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="sexo" id="masculino"
+                                    value="masculino" required>
+                                <label class="form-check-label" for="masculino">Masculino</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="sexo" id="feminino" value="feminino"
+                                    required>
+                                <label class="form-check-label" for="feminino">Feminino</label>
+                            </div>
+                            <div class="invalid-feedback">Por favor, selecione seu sexo.</div>
+                        </div>
+
+
+                        <h4 class="mt-4 mb-3">Endereço</h4>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="logradouro" class="form-label">Logradouro</label>
+                                <input type="text" class="form-control" id="logradouro" name="logradouro" required>
+                                <div class="invalid-feedback">Por favor, insira o logradouro.</div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="bairro" class="form-label">Bairro</label>
+                                <input type="text" class="form-control" id="bairro" name="bairro" required>
+                                <div class="invalid-feedback">Por favor, insira o bairro.</div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="cidade" class="form-label">Cidade</label>
+                                <input type="text" class="form-control" id="cidade" name="cidade" required>
+                                <div class="invalid-feedback">Por favor, insira a cidade.</div>
+                            </div>
+                        </div>
+
+
+                        <button type="submit" class="btn btn-primary mt-4">Enviar</button>
+                    </form>
+                </div>
+            </section>
         </div>
     </main>
     <footer>
