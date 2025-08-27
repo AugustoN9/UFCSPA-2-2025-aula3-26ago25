@@ -51,82 +51,69 @@
 
                 </section>
             </section>
-
-            <!-- Seção do Formulário -->
-            <section id="formulario" class=" text d-flex align-items-center justify-content-center text-center py-5 bg-black"
-                style="--bg: #e6e6e6">
-                <div class="container">
-                    <h2 class="mb-4">Formulário de Cadastro</h2>
-                    <form class="needs-validation" novalidate>
-                        <div class="mb-3">
-                            <label for="nome" class="form-label">Nome</label>
-                            <input type="text" class="form-control" id="nome" name="nome" required>
-                            <div class="invalid-feedback">Por favor, insira seu nome.</div>
-                        </div>
-
-
-                        <div class="mb-3">
-                            <label for="idade" class="form-label">Idade</label>
-                            <input type="number" class="form-control" id="idade" name="idade" min="0" required>
-                            <div class="invalid-feedback">Por favor, insira uma idade válida.</div>
-                        </div>
-
-
-                        <div class="mb-3">
-                            <label for="cpf" class="form-label">CPF</label>
-                            <input type="text" class="form-control" id="cpf" name="cpf" maxlength="14"
-                                placeholder="000.000.000-00" required>
-                            <div class="invalid-feedback">Por favor, insira um CPF válido.</div>
-                        </div>
-
-
-                        <div class="mb-3">
-                            <label for="dataNascimento" class="form-label">Data de Nascimento</label>
-                            <input type="date" class="form-control" id="dataNascimento" name="dataNascimento" required>
-                            <div class="invalid-feedback">Por favor, insira sua data de nascimento.</div>
-                        </div>
-
-
-                        <div class="mb-3">
-                            <label class="form-label">Sexo</label>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="sexo" id="masculino"
-                                    value="masculino" required>
-                                <label class="form-check-label" for="masculino">Masculino</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="sexo" id="feminino" value="feminino"
-                                    required>
-                                <label class="form-check-label" for="feminino">Feminino</label>
-                            </div>
-                            <div class="invalid-feedback">Por favor, selecione seu sexo.</div>
-                        </div>
-
-
-                        <h4 class="mt-4 mb-3">Endereço</h4>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <label for="logradouro" class="form-label">Logradouro</label>
-                                <input type="text" class="form-control" id="logradouro" name="logradouro" required>
-                                <div class="invalid-feedback">Por favor, insira o logradouro.</div>
-                            </div>
-                            <div class="col-md-3">
-                                <label for="bairro" class="form-label">Bairro</label>
-                                <input type="text" class="form-control" id="bairro" name="bairro" required>
-                                <div class="invalid-feedback">Por favor, insira o bairro.</div>
-                            </div>
-                            <div class="col-md-3">
-                                <label for="cidade" class="form-label">Cidade</label>
-                                <input type="text" class="form-control" id="cidade" name="cidade" required>
-                                <div class="invalid-feedback">Por favor, insira a cidade.</div>
-                            </div>
-                        </div>
-
-
-                        <button type="submit" class="btn btn-primary mt-4">Enviar</button>
-                    </form>
+        </div>
+        <!-- Seção do Formulário -->
+        <div class="container my-5">
+            <h2 class="mb-4">Formulário</h2>
+            <form>
+                <!-- Nome -->
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
                 </div>
-            </section>
+        
+                <!-- Idade e Gênero -->
+                <div class="row mb-3">
+                    <div class="col-md-2">
+                        <label for="idade" class="form-label">Idade</label>
+                        <input type="number" class="form-control" id="idade" placeholder="Idade">
+                    </div>
+                    <div class="col-md-10 d-flex align-items-end">
+                        <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="genero" id="masculino" value="masculino">
+                            <label class="form-check-label" for="masculino">Masculino</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="genero" id="feminino" value="feminino">
+                            <label class="form-check-label" for="feminino">Feminino</label>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Data de Nascimento e CPF -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="dataNascimento" class="form-label">Data de Nascimento</label>
+                        <input type="date" class="form-control" id="dataNascimento">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="cpf" class="form-label">CPF</label>
+                        <input type="text" class="form-control" id="cpf" placeholder="000.000.000-00">
+                    </div>
+                </div>
+        
+                <!-- Endereço -->
+                <hr>
+                <h5>Endereço</h5>
+                <div class="mb-3">
+                    <label for="logradouro" class="form-label">Logradouro</label>
+                    <input type="text" class="form-control" id="logradouro" placeholder="Rua, Avenida, etc">
+                </div>
+        
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="bairro" class="form-label">Bairro</label>
+                        <input type="text" class="form-control" id="bairro" placeholder="Bairro">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="cidade" class="form-label">Cidade</label>
+                        <input type="text" class="form-control" id="cidade" placeholder="Cidade">
+                    </div>
+                </div>
+        
+                <!-- Botão -->
+                <button type="submit" class="btn btn-primary w-100">Enviar</button>
+            </form>
         </div>
     </main>
     <footer>
